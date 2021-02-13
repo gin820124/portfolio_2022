@@ -1767,6 +1767,7 @@ ul.tabs li.active {
     .about__visual {
         width: 335px;
         left: -10%;
+       
     }
     .about__content-blurb h2 {
         font-size: 32px;
@@ -1922,6 +1923,7 @@ ul.tabs li.active {
     }
     .about__visual img {
         width: 300px;
+        padding-top: 24px;
     }
     
     .fix_gif img{
