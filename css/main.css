@@ -704,7 +704,6 @@ input[type="button"]:focus {
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: "Merriweather Sans";
-    margin-left: 24px;
 }
 
 .navigation__container {
@@ -1389,6 +1388,9 @@ ul.tabs li.active {
 }
 
 @media (max-width: 991px) {
+    .logo{
+        margin-left: 24px;
+    }
     .about {
         padding: 60px 0
     }
@@ -1537,7 +1539,7 @@ ul.tabs li.active {
         -ms-flex-pack: justify;
         justify-content: space-between;
         cursor: pointer;
-        margin-right: 48px;
+        margin-right: 24px;
     }
     .navigation__burger--is-open .navigation__burger-el {
         -webkit-transition: opacity .2s, -webkit-transform .4s;
