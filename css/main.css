@@ -3,13 +3,14 @@
 @import 'https://fonts.googleapis.com/css?family=Allura|Merriweather+Sans:400,700,800';
 @import url(//fonts.googleapis.com/earlyaccess/Merriweather+Sans.css);
 html {
-    font-family: 'Merriweather Sans'; 'Noto Sans TC', 微軟正黑體;
+    font-family: 'Merriweather Sans', 'Noto Sans TC', 微軟正黑體;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-family: 'Merriweather Sans', 'Noto Sans TC', '微軟正黑體';
 }
 
 article,
@@ -334,7 +335,7 @@ body {
 
 a {
     display: inline-block;
-    color: #FFA280;
+    color: #1b8683;
     ;
     text-decoration: none
 }
@@ -397,7 +398,7 @@ textarea {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #292929
+    background-color: #292929;
     z-index: 100;
     -webkit-transition: opacity .4s .4s;
     transition: opacity .4s .4s
@@ -464,7 +465,7 @@ textarea {
     display: block;
     width: 100%;
     height: 1.5px;
-    background-color: #f1a384;
+    background-color: #1b8683;
     -webkit-transition: -webkit-transform .2s ease-out;
     transition: -webkit-transform .2s ease-out;
     transition: transform .2s ease-out;
@@ -510,9 +511,7 @@ input[type="reset"]:focus,
 input[type="button"]:hover,
 input[type="button"]:active,
 input[type="button"]:focus {
-    /* background-color: #FFA280;
-    border-color: #FFA280;
-    color: #fff; */
+    border-color: #000000;
 }
 
 .blurb__heading {
@@ -532,7 +531,7 @@ input[type="button"]:focus {
 }
 
 .title {
-    margin: 40px 0px;
+    margin: 50px 0px;
     color: #292929;
     font-size: 32px;
     font-family: "Merriweather Sans";
@@ -709,10 +708,9 @@ input[type="button"]:focus {
 .navigation__container {
     position: absolute;
     top: 50%;
-    left: 63%;
+    right: -23%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 32%;
+    width: 47%;
 }
 
 .navigation__list {
@@ -737,7 +735,7 @@ input[type="button"]:focus {
 }
 
 .navigation__list > li a:hover {
-    color: #FFA280;
+    color: #0f7774;
     transition: .2s ease-in-out;
 }
 
@@ -1091,8 +1089,7 @@ input[type="button"]:focus {
 
 .blog {
     position: relative;
-    padding: 60px 0;
-    /*    background-color: #fff;*/
+    padding: 20px 0;
 }
 
 .blog__wrapper {
@@ -1185,8 +1182,8 @@ ul.tabs li {
 }
 
 ul.tabs li.active {
-	color: #f1a384;
-    border-bottom: 2px solid #f1a384;
+	color: #1b8683;
+    border-bottom: 2px solid #1b8683;
     display: block;
 }
 
@@ -1255,8 +1252,8 @@ ul.tabs li.active {
 
 .my_cv {
     width: 170px;
-    border: 2px solid #f1a384;
-    color: #f1a384;
+    border: 2px solid #1b8683;
+    color: #1b8683;
     text-align: left;
     margin-top: 25px;
     margin-bottom: 60px;
@@ -1272,13 +1269,15 @@ ul.tabs li.active {
 /* 2021 新增下載履歷按鈕 */
 .download_cv {
     display: inline-block;
-    width: 18px;
-    height: 19px;
+    width: 16px;
+    height: 16px;
     margin-left: 4px;
     background-image: url(../img/ic_download.svg);
     background-position: 0px 0px;
-    background-size: 18px;
+    background-size: 16px;
 }
+
+
 
 /* 20210213 新增 footer sns */
 /*footer CSS*/
@@ -1310,7 +1309,7 @@ ul.tabs li.active {
 
 .sns a {
     isplay: inline-block;
-    color: #FFA280;
+    color: #1b8683;
     text-decoration: none;
     width: 48px;
     height: 48px;
@@ -1331,14 +1330,64 @@ ul.tabs li.active {
 
 .btn_pri {
     color: #fff;
-    background-color: #ffa280;
-    border: 2px solid #ffa280;
+    background-color: #1b8683;
+    border: 2px solid #1b8683;
 }
 
 .btn_pri:hover {
-    background-color: #f1926f;
-    border: 2px solid #f1926f;
+    background-color: #0f7774;
+    border: 2px solid #0f7774;
+    color: #fff;
 }
+
+
+/* 新版 project */
+.project_content{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.project_content_a{
+    position: relative;
+    display: flex;
+}
+
+.project_description {
+    width: 50%;
+    margin-left: 60px;
+    color: #292929;
+}
+
+.project_img{
+    width: 450px;
+}
+
+.project_title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project_year {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project_subtitle{
+    font-size: 20px;
+}
+
+.project_tag {
+    display: flex;
+    font-size: 15px;
+    margin-left: -10px;
+}
+
+.project_tag > p {
+    margin-left: 10px;
+}
+
 
 /*全部的RWD CSS*/
 
@@ -1534,7 +1583,7 @@ ul.tabs li.active {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: justify;g
+        -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -1631,7 +1680,7 @@ ul.tabs li.active {
         height: 586px
     }
     .blog__heading {
-        font-size: 48px
+        font-size: 32px
     }
     .blog__wrapper {
         -webkit-box-orient: vertical;
@@ -1693,7 +1742,7 @@ ul.tabs li.active {
         margin-left: -250px;
     }
     .work {
-        padding: 90px 0 13px 0;
+        padding: 90px 0 54px 0;
     }
     .work__heading {
         font-size: 48px;
@@ -1756,6 +1805,21 @@ ul.tabs li.active {
         }
     .about_gin .work__list {
         padding: 0px;
+    }
+    .project_content {
+        width: auto;
+        padding: 0 24px;
+    }
+    .project_content_a {
+        display: block;
+    }
+    .project_img {
+        width: 100%;
+    }
+    .project_description {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
     }
 }
 
@@ -1941,6 +2005,31 @@ ul.tabs li.active {
     
     .web-design__visual {
         left: 6%;
+    }
+    .btn_rwd {
+        width: 160px;
+        position: absolute;
+        margin-top: 20px;
+        text-align: center;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .project_content {
+        padding: 24px 24px;
+    }
+    .project_description { 
+        margin-top: 3px;
+    }
+    .project_title {
+        font-size: 22px;
+    }
+    .project_subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .title {
+        margin: 30px 0px;
     }
 }
 
