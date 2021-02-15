@@ -3,14 +3,14 @@
 @import 'https://fonts.googleapis.com/css?family=Allura|Merriweather+Sans:400,700,800';
 @import url(//fonts.googleapis.com/earlyaccess/Merriweather+Sans.css);
 html {
-    font-family: 'Merriweather Sans', 'Noto Sans TC', 微軟正黑體;
+    font-family: "Merriweather Sans", "Noto Sans TC", 微軟正黑體;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 body {
     margin: 0;
-    font-family: 'Merriweather Sans', 'Noto Sans TC', '微軟正黑體';
+    font-family: "Merriweather Sans", "Noto Sans TC", 微軟正黑體;
 }
 
 article,
@@ -377,7 +377,7 @@ textarea {
 
 .wrapper--large {
     width: 1000px;
-    font-family: "Merriweather Sans";
+    font-family: "Merriweather Sans", "Noto Sans TC", 微軟正黑體;
 }
 
 .splashscreen {
@@ -629,55 +629,6 @@ input[type="button"]:focus {
     background-color: rgba(0, 50, 48, 0);
 }
 
-/*ABOUT頁面CSS*/
-
-.about_me {
-    background-color: #fff;
-    padding: 13% 0px;
-}
-
-.about_content {
-    position: relative;
-    z-index: 1;
-}
-
-.about_pic {
-    width: 32%;
-    margin-right: 50px;
-    float: left;
-}
-
-
-/*
-.about_pic {
-    width: 200px;
-    margin:auto;
-}
-*/
-
-
-
-.about_pic img {
-    width: 100%;
-}
-
-.about_word h3 {
-    color: #1b8683;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.about_word p {
-    color: #525252;
-    font-size: 15px;
-    font-weight: 700;
-    display: flex;
-}
-
-.about_word img {
-    width: 40px;
-    padding: 5px 5px;
-}
 
 .navigation {
     position: absolute;
@@ -1388,6 +1339,70 @@ ul.tabs li.active {
     margin-left: 10px;
 }
 
+
+/* about 關於我 20210215 */
+.about_box {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+
+/*ABOUT頁面CSS*/
+
+.about_me {
+    background-color: #fff;
+    padding: 6% 0px;
+    color: #292929;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about_me h3 {
+    color: #1b8683;
+}
+
+.about_content {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+}
+
+.about_pic {
+    width: 50%;
+    margin-right: 50px;
+}
+
+
+.about_pic img {
+    width: 100%;
+}
+
+.about_me h3 {
+    color: #292929;;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.about_word p {
+    font-size: 16px;
+    display: flex;
+}
+
+.about_word img {
+    width: 40px;
+    padding: 5px 5px;
+}
+
+.about_others {
+    background-color: #f9f9f9;
+    padding: 1px 30px 10px 30px;
+}
+
+.about_others img {
+    margin-right: 15px;
+    width: 50px;
+}
 
 /*全部的RWD CSS*/
 
