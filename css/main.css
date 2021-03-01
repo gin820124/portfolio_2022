@@ -1343,8 +1343,8 @@ ul.tabs li.active {
 /* about 關於我 20210215 */
 .about_box {
     display: flex;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 
@@ -1365,12 +1365,12 @@ ul.tabs li.active {
 .about_content {
     position: relative;
     z-index: 1;
-    width: 50%;
+    width: 65%;
 }
 
 .about_pic {
-    width: 50%;
-    margin-right: 50px;
+    width: 35%;
+    margin-right: 10px;
 }
 
 
@@ -1395,7 +1395,7 @@ ul.tabs li.active {
 }
 
 .about_others {
-    background-color: #f9f9f9;
+    background-color: #f6f9fd;
     padding: 1px 30px 10px 30px;
 }
 
